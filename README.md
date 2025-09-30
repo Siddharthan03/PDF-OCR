@@ -7,21 +7,23 @@ Introduction
 The PDF OCR project provides tools for converting scanned or image-based healthcare documents into searchable and editable text. This helps automate the handling of patient records and billing summaries while preserving critical data integrity.
 
 Features
-Reads PDF files containing nursing notes and medical billing records.
 
-Converts printed or handwritten content to structured digital text for further processing.
+  1. Reads PDF files containing nursing notes and medical billing records.
 
-Facilitates review, analysis, and archival of healthcare documentation.
+  2. Converts printed or handwritten content to structured digital text for further processing.
+
+  3. Facilitates review, analysis, and archival of healthcare documentation.
 
 
-Prerequisites
-Python 3.x
+PREREQUISITES
 
-PyPDF2 or pdfplumber (for PDF parsing)
+  1. Python 3.x
 
-Tesseract OCR (for text extraction)
+  2. PyPDF2 or pdfplumber (for PDF parsing)
 
-pytesseract (Python binding for Tesseract)
+  3. Tesseract OCR (for text extraction)
+
+  4. pytesseract (Python binding for Tesseract)
 
 Other standard libraries: os, re
 
