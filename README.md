@@ -6,7 +6,7 @@ This project extracts and digitizes healthcare information from PDF files using 
 Introduction
 The PDF OCR project provides tools for converting scanned or image-based healthcare documents into searchable and editable text. This helps automate the handling of patient records and billing summaries while preserving critical data integrity.
 
-Features
+FEATURES
 
   1. Reads PDF files containing nursing notes and medical billing records.
 
