@@ -1,0 +1,171 @@
+/* Page Container */
+.settings-page {
+  padding: 2rem;
+  min-height: 80vh;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.settings-page.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Title */
+.settings-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+/* Form Container */
+.settings-form {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  padding: 2rem;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #e0e0e0;
+}
+
+.form-input {
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-input::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+.form-input:focus {
+  border-color: #00bcd4;
+  box-shadow: 0 0 8px rgba(0,188,212,0.6);
+}
+
+/* Helper text */
+.form-helper {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.6);
+  margin-top: 0.3rem;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+  position: relative;
+  width: 70px;
+  height: 32px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-label {
+  position: absolute;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background: rgba(255,255,255,0.2);
+  border-radius: 32px;
+  cursor: pointer;
+  transition: background 0.3s ease, justify-content 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* ✅ default position for "Off" */
+  padding: 0 10px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.toggle-switch input:checked + .switch-label {
+  background: rgba(0, 123, 255, 0.8);
+  justify-content: flex-end;
+  padding: 0 10px;
+}
+
+/* Buttons */
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.btn-save,
+.btn-reset {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-save {
+  background: rgba(0, 123, 255, 0.7);
+  color: #fff;
+}
+
+.btn-save:hover {
+  background: rgba(0, 123, 255, 1);
+  transform: translateY(-2px);
+}
+
+.btn-reset {
+  background: rgba(220, 53, 69, 0.7);
+  color: #fff;
+}
+
+.btn-reset:hover {
+  background: rgba(220, 53, 69, 1);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .settings-form {
+    padding: 1.5rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .btn-save,
+  .btn-reset {
+    flex: 100%;
+  }
+}

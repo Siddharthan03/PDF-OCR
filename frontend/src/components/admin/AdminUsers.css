@@ -1,0 +1,182 @@
+/* Container & Title */
+.users-page {
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  min-height: 80vh;
+}
+
+.users-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+}
+
+/* Controls */
+.users-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 20px;
+  background: linear-gradient(
+    135deg,
+    #007bff26,
+    rgba(255, 0, 123, 0.15)
+  );
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.25);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.users-search,
+.users-filter {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  outline: none;
+  font-size: 1rem;
+}
+
+.users-search::placeholder {
+  color: rgba(255,255,255,0.8);
+}
+
+/* Table */
+.users-table-container {
+  border-radius: 20px;
+  overflow: hidden;
+  background: #007bff1a;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.25);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.users-table th,
+.users-table td {
+  padding: 1rem;
+}
+
+.users-table thead {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(8px);
+}
+
+.users-table tbody tr {
+  transition: all 0.3s ease;
+}
+
+.users-table tbody tr:hover {
+  background: rgba(255,255,255,0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+/* Role badges */
+.role-badge {
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.role-user { background: linear-gradient(135deg, #00c6ff, #0072ff); }
+.role-admin { background: linear-gradient(135deg, #f9d423, #ff4e50); }
+.role-suspended { background: linear-gradient(135deg, #ff416c, #ff4b2b); }
+
+/* Buttons */
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: none;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.promote-btn {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  margin-right: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0,123,255,0.4);
+}
+.promote-btn:hover {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  transform: translateY(-2px);
+}
+
+.delete-btn {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(220,53,69,0.4);
+}
+.delete-btn:hover {
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  transform: translateY(-2px);
+}
+
+.bulk-btn {
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(255,0,0,0.4);
+}
+.bulk-btn:hover { transform: translateY(-2px); }
+
+/* Pagination */
+.pagination {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.page-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.page-btn:hover { background: rgba(255,255,255,0.35); }
+
+.active-page {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+}
+
+/* Loading & Empty */
+.loading-text {
+  text-align: center;
+  padding: 2rem;
+  color: rgba(255,255,255,0.85);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .users-controls {
+    flex-direction: column;
+  }
+  .users-table th, .users-table td {
+    padding: 0.5rem;
+  }
+  .btn {
+    margin-bottom: 0.3rem;
+  }
+}

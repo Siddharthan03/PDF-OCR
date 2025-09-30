@@ -1,0 +1,15 @@
+Flask==2.3.3
+flask-cors==4.0.0            # Newer version, works well with Flask 2.3+
+pytesseract==0.3.13
+PyMuPDF==1.22.5
+fpdf==1.7.2
+Pillow==10.1.0
+pdf2image==1.17.0
+google-cloud-vision==3.10.2
+google-cloud-storage==2.10.0
+pymongo==4.14.0
+docx2txt==0.8
+flask-jwt-extended==4.6.0    # Newer version for bug fixes & Python 3.9+
+bcrypt==4.1.2                # Latest security fixes
+openpyxl==3.1.2
+python-dotenv==1.0.1          # Patch release with small fixes
