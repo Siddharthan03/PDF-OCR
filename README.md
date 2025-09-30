@@ -25,6 +25,4 @@ PREREQUISITES
 
   4. pytesseract (Python binding for Tesseract)
 
-Other standard libraries: os, re
-
-
+OTHER STANDARD LIBRARIES : os, re
